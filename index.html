@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Players</title>
+    <style>
+        .video-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-wrapper {
+            width: 100%;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <div class="video-wrapper">
+            <h2>Production</h2>
+            <video controls>
+                <source src="https://storage.cloud.google.com/am-video-prod/video/site/5244/video_generation/773/e4517d50-fb70-4875-b6c0-949a0878a460/short_video_1770.mp4?authuser=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="video-wrapper">
+            <h2>Staging</h2>
+            <video controls>
+                <source src="https://storage.cloud.google.com/am-video-dev/video/site/5244/video_generation/773/d52cccfe-3023-4cd5-8ad8-4fdabfdfbe01/short_video_1770.mp4?authuser=1" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</body>
+</html>
